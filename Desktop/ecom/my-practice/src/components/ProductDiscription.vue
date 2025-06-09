@@ -53,7 +53,7 @@
             </div>
 
 <hr/>
-            <div class="mt-6">
+            <div class="mt-6 mr-1">
                 <p class="text-lg font-bold text-gray-800 mb-4">Customer Reviews</p>
 
                 <div v-for="user in product.reviews" :key="user"
