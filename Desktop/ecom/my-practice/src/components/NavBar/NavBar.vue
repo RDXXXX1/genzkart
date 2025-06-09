@@ -63,7 +63,7 @@ name:"NavBar",
 <template>
   <div class="fixed top-0 w-full z-50 bg-white shadow-md">
     <div class="flex justify-between items-center px-4 h-20">
-      <!-- Logo -->
+      
       <div class="flex items-center">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVzxAPq8BsMvq33e6gnKELbM6L3NKdy6gF5g&s"
@@ -72,14 +72,14 @@ name:"NavBar",
         />
       </div>
 
-      <!-- Hamburger button (only visible on mobile) -->
+    
       <button @click="toggleMenu" class="lg:hidden focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
 
-      <!-- Navigation links (hidden on mobile, shown on desktop) -->
+      
       <div class="hidden lg:flex space-x-6 font-bold">
         <router-link to="/Men" class="cursor-pointer">Men</router-link>
         <router-link to="/Women" class="cursor-pointer">Women</router-link>
@@ -137,7 +137,7 @@ name:"NavBar",
       </div>
       <div class="relative cursor-pointer p-2   " @click="navigateToCart">
   <img src="https://img.icons8.com/?size=100&id=3686&format=png&color=000000" class="h-6 w-6" alt="Bag Icon" />
-  <p class="absolute top-0 right-0 bg-pink-600 text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center">{{cartItems.length}}</p>
+  <p class="absolute top-0 left-0 bg-pink-600 text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center">{{cartItems.length}}</p>
 </div>
     </div>
   </div>

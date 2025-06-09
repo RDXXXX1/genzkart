@@ -14,7 +14,11 @@
             }
         },
         REMOVE_FROM_CART(state,productId){
-            
+            const product=state.cartItems.find(p=>p.id==productId)
+            if(product && product.quantity>1){
+                product.quantity--;
+            }
+            else
             state.cartItems=state.cartItems.filter(p=>p.id!==productId);
         },
         CLEAR_CART(state){
