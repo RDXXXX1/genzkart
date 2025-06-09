@@ -57,7 +57,7 @@
                 <p class="text-lg font-bold text-gray-800 mb-4">Customer Reviews</p>
 
                 <div v-for="user in product.reviews" :key="user"
-                    class="p-1 mb-3 ">
+                    class="mr-8 mb-3 ">
                     <div class="flex items-center justify-between mb-1">
                         <p class="text-sm font-semibold text-gray-700">{{ user.user }}</p>
                         <p class="text-pink-600 font-bold text-sm">

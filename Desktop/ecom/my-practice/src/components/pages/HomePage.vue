@@ -18,7 +18,7 @@
           <p class="mx-24  font-bold text-4xl ">GenZ new Arrivals</p>
           <ProductCard :products="genZProducts"/>
 
-          <ApiComponent/>
+         
 
       
 </div>
@@ -29,7 +29,7 @@
 import ProductCard from '../ProductCard.vue';
 import { products } from '@/data/products';
 import BannerCom from '../BannerCom.vue';
-import ApiComponent from '../ApiComponent.vue';
+
  import { EventBus } from '@/main';
 export default{
     name:"HomePage",
@@ -44,7 +44,7 @@ export default{
     components:{
         ProductCard,
         BannerCom,
-         ApiComponent,
+        
     },
     mounted(){
 
